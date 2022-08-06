@@ -28,7 +28,7 @@ En [el caso de Maui](https://github.com/dotnet/maui/blob/main/.github/CONTRIBUTI
 De las tres mostradas, la primera de ellas es ya común con XAML, ya que no se suele añadir [`x:FieldModifier="Private"`](https://docs.microsoft.com/es-es/dotnet/maui/xaml/field-modifiers) en nuestros controles, pero las otras dos indicadas para **Xamarin.Forms** las adoptaremos y explicaremos en nuestra guía de estilo.
 
 ## La Realidad.
-Aunque a todos consideramos que a la hora de escribir llevamos cierto sentido práctico y organizado, lo cierto es que, aunque sea así, puede no ser el mismo sentido práctico y organizado que el del resto de miembros del equipo. Por lo que en esta guía se plasmarán las ideas principales a seguir para que independientemente de qué m miembro del equipo desarrolle el código, se escriba un XAML similar.
+Aunque a todos consideramos que a la hora de escribir llevamos cierto sentido práctico y organizado, lo cierto es que, aunque sea así, puede no ser el mismo sentido práctico y organizado que el del resto de miembros del equipo. Por lo que en esta guía se plasmarán las ideas principales a seguir para que independientemente de qué miembro del equipo desarrolle el código, se escriba un XAML similar.
 
 # Reglas.
 
@@ -38,8 +38,9 @@ Como se comentó anteriormente, es una de las reglas de Xamarin.Forms y Maui. En
 Pensad que para alguien que tenga la accesibilidad activa, es mejor escuchar dos veces la palabra *tab* que ocho veces la palabra *space*.
 
 ## Saltos de línea.
-1. ### Longitud de linea.
-2. ### Saltos de línea en bindings.
+1. ### Por tipo de propiedad.
+2. ### Longitud de linea.
+3. ### Saltos de línea en bindings.
 
 ## Orden
 1. ### Argumentos, diccionarios y propiedades
