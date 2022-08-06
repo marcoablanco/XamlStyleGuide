@@ -33,6 +33,9 @@ Aunque a todos consideramos que a la hora de escribir llevamos cierto sentido pr
 # Reglas.
 
 ## Tabulaciones antes que espacios.
+Como se comentó anteriormente, es una de las reglas de Xamarin.Forms y Maui. En [el enlace de Xamarin.Forms](https://github.com/xamarin/Xamarin.Forms#coding-style) podréis encontrar como configurar Visual Studio para que lo haga de forma automática.
+
+Pensad que para alguien que tenga la accesibilidad activa, es mejor escuchar dos veces la palabra *tab* que ocho veces la palabra *space*.
 
 ## Saltos de línea.
 1. ### Longitud de linea.
