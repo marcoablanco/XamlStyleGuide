@@ -1,13 +1,14 @@
 # **Guía de estilo de XAML (Xamarin.Forms/Maui)**
+
+# Declinación de responsabilidades
+Al pasar esta guía a escrito pueden surgir contradicciones, inexactitudes y aspectos no tenidos en cuenta entre otras cosas. Durante años no hemos necesitado tenerla por escrito para hacer un código limpio y similar entre nosotros. Confía en tu instinto y piensa en como te gustaría encontrarte el código si llegases nuevo al proyecto.
+
+Esta guía se presenta **únicamente como guía de orientación** y para plasmar el estilo de XAML que durante años hemos usado algunos compañeros y yo. Siéntate antes con tu equipo y hablad que estilo, normas o reglas váis a seguir. 
+
 # Motivación
 
 ## No romper nada.
 Con esta guía de estilo no pretendo romper algunas convenciones *no escritas* que tiene el XAML (Como el uso de una linea por cada namespace en el objeto principal del archivo). Sino recoger y escribir las normas comunes y añadir aquellas para las que nada se ha establecido.
-
-## Declinación de responsabilidad
-Al pasar esta guía a escrito pueden surgir contradicciones, inexactitudes y aspectos no tenidos en cuenta entre otras cosas. Durante años no hemos necesitado tenerla por escrito para hacer un código limpio y similar entre nosotros. Confía en tu instinto y piensa en como te gustaría encontrarte el código si llegases nuevo al proyecto.
-
-Esta guía se presenta como guía de orientación y para plasmar el estilo de XAML que durante años hemos usado algunos compañeros y yo. Siéntate antes con tu equipo y hablad que estilo, normas o reglas váis a seguir. 
 
 **Y por supuesto, no dudes en abrir una *issue* o presentar un *pull request* si crees que se puede mejorar.**
 
