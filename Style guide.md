@@ -13,7 +13,6 @@ Con esta guía de estilo no pretendo romper algunas convenciones *no escritas* q
 **Y por supuesto, no dudes en abrir una *issue* o presentar un *pull request* si crees que se puede mejorar.**
 
 ## Guías oficiales.
-
 Uno de los motivos para escribir está guía es que no he encontrado guías "*oficiales*" o "*standars*" para seguir un estándar apropiado para escritura de XAML al diseñar pantallas o controles en **Xamarin.Forms** o Maui. 
 
 No hay tales indicaciones explicitas para el XAML en los GitHubs oficiales de **Xamarin.Forms** o **Maui**, sino que sólo indicaciones basadas en las [reglas de la .NetFundation](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md) para C#.
@@ -29,6 +28,7 @@ En [el caso de Maui](https://github.com/dotnet/maui/blob/main/.github/CONTRIBUTI
 De las tres mostradas, la primera de ellas es ya común con XAML, ya que no se suele añadir [`x:FieldModifier="Private"`](https://docs.microsoft.com/es-es/dotnet/maui/xaml/field-modifiers) en nuestros controles, pero las otras dos indicadas para **Xamarin.Forms** las adoptaremos y explicaremos en nuestra guía de estilo.
 
 ## La Realidad.
+Aunque a todos consideramos que a la hora de escribir llevamos cierto sentido práctico y organizado, lo cierto es que, aunque sea así, puede no ser el mismo sentido práctico y organizado que el del resto de miembros del equipo. Por lo que en esta guía se plasmarán las ideas principales a seguir para que independientemente de qué m miembro del equipo desarrolle el código, se escriba un XAML similar.
 
 # Reglas.
 
