@@ -35,7 +35,7 @@ De las tres mostradas, la primera de ellas es ya común con XAML, ya que no se s
 ## Tabulaciones antes que espacios.
 
 ## Saltos de línea.
-1. ### Logintud.
+1. ### Longitud de linea.
 2. ### Saltos de línea en bindings.
 
 ## Orden
