@@ -44,7 +44,7 @@ En XAML, heredando el estilo del diseñador de *WPF* de Visual Studio, se ha est
 Vamos a agrupar las propiedades en tipos y usaremos esos mismos tipos para saber en qué línea estará colocada cada propiedad del control. Los tipos para cada línea y el orden que deben llevar [se especifican más abajo](#orden).
 
 Ejemplo:
-```
+```XAML
 <Label x:Name="LblName" AutomationId="{Static r:Text.DescriptionFieldName}"
        Text="{Static r:Text.FieldName}" FontSize="Body"
        BackgroundColor="Green"
@@ -56,7 +56,7 @@ En este ejemplo vemos como en la primera línea hemos colocado cualquier propied
 El *Coding Style* de **Xamarin.Forms** establece que la longitud de línea debe limitarse a 120 lo máximo posible. En ocasiones en las que nos saltemos demasiado ese límite por el número de propiedades del mismo tipo o la longitud de las mismas, podremos usar dos o más líneas para ello.
 
 Ejemplo:
-```
+```XAML
 <Button Text="{Static r:Text.BtnSearch}" FontSize="Body"
         Opacity="{Binding UserEnabledSearchSelection, Converter={StaticResource PercentConverter}"
         IsEnabled="{Binding UserEnabledSearchSelection, Converter={StaticResource IntToBoolConverter}}"
