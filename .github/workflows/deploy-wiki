@@ -1,0 +1,56 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  deploy-wiki:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v3
+        with:
+          repository: ${{ github.repository }}
+          path: repo
+          submodules: false
+          
+      - name: Copy wiki
+        run: |
+          cp -r repo/wiki wiki
+        
+        
+      - name: Prepare environment
+        run: |
+          echo "SSH_AUTH_SOCK=/tmp/ssh_agent.sock" >> $GITHUB_ENV
+          export GIT_SSH_COMMAND="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no" 
+          echo "GIT_SSH_COMMAND=$GIT_SSH_COMMAND" >> $GITHUB_ENV
+        
+      # The public key for this key is a deploy key in the server repo
+      - name: Setup SSH Key
+        run: |
+          ssh-agent -a $SSH_AUTH_SOCK > /dev/null
+          ssh-add - <<< "${{ secrets.REPO_SSH_KEY }}"
+        
+      - name: Push wiki
+        run: |  
+          cd wiki
+          git config --global init.defaultBranch master
+          git config --global user.name 'Wiki Pusher'
+          git config --global user.email 'actions@github.com'
+          
+          git init
+          git remote add origin git@github.com:${GITHUB_REPOSITORY}.wiki.git
+          git add --all -f
+          git commit -am "Update wiki"
+          git push --set-upstream origin master -f
