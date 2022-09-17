@@ -13,7 +13,7 @@ Con esta guía de estilo no pretendo romper algunas convenciones *no escritas* q
 **Y por supuesto, no dudes en abrir una *issue* o presentar un *pull request* si crees que se puede mejorar.**
 
 ## Guías oficiales.
-Uno de los motivos para escribir está guía es que no he encontrado guías "*oficiales*" o "*standars*" para seguir un estándar apropiado para escritura de XAML al diseñar pantallas o controles en **Xamarin.Forms** o **Maui**. 
+Uno de los motivos para escribir está guía es que no he encontrado guías "*oficiales*" o "*standards*" para seguir un estándar apropiado para escritura de XAML al diseñar pantallas o controles en **Xamarin.Forms** o **Maui**. 
 
 No hay tales indicaciones explicitas para el XAML en los GitHubs oficiales de **Xamarin.Forms** o **Maui**, sino que sólo indicaciones basadas en las [reglas de la .NetFoundation](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md) para C#.
 
